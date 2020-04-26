@@ -9,26 +9,53 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var encodedStr = ""
-    
+    private let buttonInsets = EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
+     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack {
             Text("Panda Decoder")
                 .font(.largeTitle)
+                .padding(50)
             Spacer()
-            HStack(alignment: .center) {
-                Text("Enter a word to decode:")
-                    .font(.callout)
-                    .bold()
-                TextField("", text: $encodedStr)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-            }.padding()
-            Button(action: { print("Button pressed") }) {
-                Text("Decode")
+            Button(action: openCamera) {
+                Text("Scan a puzzle").foregroundColor(.white)
+            }.padding(buttonInsets)
+                .background(Color.blue)
+                .cornerRadius(3.0)
+            Text(text).lineLimit(nil)
+            if !text.isEmpty {
+                Button(action: decode) {
+                    Text("Decode").foregroundColor(.white)
+                }.padding(buttonInsets)
+                    .background(Color.blue)
+                    .cornerRadius(3.0)
+                Text(decodedText).lineLimit(nil)
             }
             Spacer()
-        }
+        }.sheet(isPresented: self.$isShowingScannerSheet) { self.makeScannerView() }
+    }
+     
+    @State private var isShowingScannerSheet = false
+    @State private var text: String = ""
+    @State private var decodedText: String = ""
+     
+    private func openCamera() {
+        isShowingScannerSheet = true
+    }
+    
+    private func decode() {
+        let decoder = SubstitutionCiperDecoder()
+        let words = text.components(separatedBy: " ")
+        self.decodedText = decoder.decode(words: words).joined(separator: " ")
+    }
+     
+    private func makeScannerView() -> ScannerView {
+        ScannerView(completion: { textPerPage in
+            if let text = textPerPage?.joined(separator: " ").trimmingCharacters(in: .whitespacesAndNewlines) {
+                self.text = text
+            }
+            self.isShowingScannerSheet = false
+        })
     }
 }
 

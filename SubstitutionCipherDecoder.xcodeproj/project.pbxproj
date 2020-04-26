@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDADEA762455DFDC006139FC /* one-grams.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDADEA752455DFDC006139FC /* one-grams.txt */; };
+		CDADEA772455DFDC006139FC /* one-grams.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDADEA752455DFDC006139FC /* one-grams.txt */; };
+		CDADEA792455DFE0006139FC /* count-2l.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDADEA782455DFE0006139FC /* count-2l.txt */; };
+		CDADEA7A2455DFE0006139FC /* count-2l.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDADEA782455DFE0006139FC /* count-2l.txt */; };
+		CDADEA7C2455DFED006139FC /* count-3l.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDADEA7B2455DFED006139FC /* count-3l.txt */; };
+		CDADEA7D2455DFED006139FC /* count-3l.txt in Resources */ = {isa = PBXBuildFile; fileRef = CDADEA7B2455DFED006139FC /* count-3l.txt */; };
+		CDADEA7F2455E2F6006139FC /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDADEA7E2455E2F6006139FC /* TextRecognizer.swift */; };
+		CDADEA802455E2F6006139FC /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDADEA7E2455E2F6006139FC /* TextRecognizer.swift */; };
+		CDADEA822455E346006139FC /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDADEA812455E346006139FC /* ScannerView.swift */; };
+		CDADEA832455E346006139FC /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDADEA812455E346006139FC /* ScannerView.swift */; };
 		CDB0F993242BA0E5009BA7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0F992242BA0E5009BA7B7 /* AppDelegate.swift */; };
 		CDB0F995242BA0E5009BA7B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0F994242BA0E5009BA7B7 /* SceneDelegate.swift */; };
 		CDB0F997242BA0E5009BA7B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0F996242BA0E5009BA7B7 /* ContentView.swift */; };
@@ -30,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CDADEA752455DFDC006139FC /* one-grams.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "one-grams.txt"; sourceTree = "<group>"; };
+		CDADEA782455DFE0006139FC /* count-2l.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "count-2l.txt"; sourceTree = "<group>"; };
+		CDADEA7B2455DFED006139FC /* count-3l.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "count-3l.txt"; sourceTree = "<group>"; };
+		CDADEA7E2455E2F6006139FC /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		CDADEA812455E346006139FC /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		CDB0F98F242BA0E5009BA7B7 /* SubstitutionCipherDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubstitutionCipherDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB0F992242BA0E5009BA7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDB0F994242BA0E5009BA7B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +82,9 @@
 		CDB0F986242BA0E5009BA7B7 = {
 			isa = PBXGroup;
 			children = (
+				CDADEA752455DFDC006139FC /* one-grams.txt */,
+				CDADEA782455DFE0006139FC /* count-2l.txt */,
+				CDADEA7B2455DFED006139FC /* count-3l.txt */,
 				CDB0F991242BA0E5009BA7B7 /* SubstitutionCipherDecoder */,
 				CDB0F9A8242BA0EB009BA7B7 /* SubstitutionCipherDecoderTests */,
 				CDB0F990242BA0E5009BA7B7 /* Products */,
@@ -88,6 +106,8 @@
 				CDB0F992242BA0E5009BA7B7 /* AppDelegate.swift */,
 				CDB0F994242BA0E5009BA7B7 /* SceneDelegate.swift */,
 				CDB0F996242BA0E5009BA7B7 /* ContentView.swift */,
+				CDADEA7E2455E2F6006139FC /* TextRecognizer.swift */,
+				CDADEA812455E346006139FC /* ScannerView.swift */,
 				CDB0F9B6242BA8C9009BA7B7 /* SubstitutionCiperDecoder.swift */,
 				CDB0F9B8242D392E009BA7B7 /* NGramDistance.swift */,
 				CDB0F9B4242BA894009BA7B7 /* DecodedWordsListView.swift */,
@@ -197,8 +217,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDADEA762455DFDC006139FC /* one-grams.txt in Resources */,
+				CDADEA7C2455DFED006139FC /* count-3l.txt in Resources */,
 				CDB0F99F242BA0EB009BA7B7 /* LaunchScreen.storyboard in Resources */,
 				CDB0F99C242BA0EB009BA7B7 /* Preview Assets.xcassets in Resources */,
+				CDADEA792455DFE0006139FC /* count-2l.txt in Resources */,
 				CDB0F999242BA0EB009BA7B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDADEA7A2455DFE0006139FC /* count-2l.txt in Resources */,
+				CDADEA7D2455DFED006139FC /* count-3l.txt in Resources */,
+				CDADEA772455DFDC006139FC /* one-grams.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,10 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB0F9B7242BA8C9009BA7B7 /* SubstitutionCiperDecoder.swift in Sources */,
+				CDADEA822455E346006139FC /* ScannerView.swift in Sources */,
 				CDB0F993242BA0E5009BA7B7 /* AppDelegate.swift in Sources */,
 				CDB0F995242BA0E5009BA7B7 /* SceneDelegate.swift in Sources */,
 				CDB0F9B9242D392E009BA7B7 /* NGramDistance.swift in Sources */,
 				CDB0F997242BA0E5009BA7B7 /* ContentView.swift in Sources */,
+				CDADEA7F2455E2F6006139FC /* TextRecognizer.swift in Sources */,
 				CDB0F9B5242BA894009BA7B7 /* DecodedWordsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDADEA832455E346006139FC /* ScannerView.swift in Sources */,
+				CDADEA802455E2F6006139FC /* TextRecognizer.swift in Sources */,
 				CDB0F9AA242BA0EB009BA7B7 /* SubstitutionCipherDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
